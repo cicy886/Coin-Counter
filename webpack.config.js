@@ -5,7 +5,7 @@ const Dotenv = require('dotenv-webpack');
 
 
 module.exports = {
-  entry: './src/index-ui-logic.js',
+  entry: './src/coin-counter.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Project Template',
+      title: 'Coin Counter',
       template: './src/index.html',
       inject: 'body'
     }),
